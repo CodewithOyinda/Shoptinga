@@ -1,0 +1,20 @@
+<svg width="65" height="64" viewBox="0 0 65 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Group 17">
+<g id="Rectangle 4" filter="url(#filter0_d_76_468)">
+<rect x="29.2811" y="5.01666" width="35.6647" height="33.7628" rx="9.5" transform="rotate(20.5337 29.2811 5.01666)" stroke="#FF8601" shape-rendering="crispEdges"/>
+</g>
+<rect id="Rectangle 3" x="12.1934" y="13.6729" width="36.6647" height="34.7628" rx="10" transform="rotate(20.5337 12.1934 13.6729)" fill="#FF7F01"/>
+</g>
+<defs>
+<filter id="filter0_d_76_468" x="15.6641" y="7.24219" width="48.79" height="47.6758" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="4"/>
+<feGaussianBlur stdDeviation="2"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_76_468"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_76_468" result="shape"/>
+</filter>
+</defs>
+</svg>

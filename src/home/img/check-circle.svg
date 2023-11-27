@@ -1,0 +1,19 @@
+<svg width="114" height="85" viewBox="0 0 114 85" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="cil:check-circle">
+<path id="Vector" d="M93.7109 19.8283C83.8565 12.9789 70.491 9.13086 56.5547 9.13086C42.6184 9.13086 29.2529 12.9789 19.3984 19.8283C9.54398 26.6778 4.00781 35.9677 4.00781 45.6543C4.00781 55.3409 9.54398 64.6308 19.3984 71.4803C29.2529 78.3297 42.6184 82.1777 56.5547 82.1777C70.491 82.1777 83.8565 78.3297 93.7109 71.4803C103.565 64.6308 109.102 55.3409 109.102 45.6543C109.102 35.9677 103.565 26.6778 93.7109 19.8283ZM56.5547 77.2824C31.4643 77.2824 11.0508 63.094 11.0508 45.6543C11.0508 28.2146 31.4638 14.0262 56.5547 14.0262C81.6455 14.0262 102.059 28.2146 102.059 45.6543C102.059 63.094 81.6455 77.2824 56.5547 77.2824Z" fill="url(#paint0_linear_226_273)"/>
+<path id="Vector_2" d="M49.2667 50.7691L32.9209 38.5816L27.8828 42.338L49.2667 58.2821L86.5616 30.4747L81.5234 26.7183L49.2667 50.7691Z" fill="url(#paint1_linear_226_273)"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_226_273" x1="56.5547" y1="9.13086" x2="56.5547" y2="82.1777" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FE8900"/>
+<stop offset="0.359525" stop-color="#FE8900" stop-opacity="0"/>
+<stop offset="0.979336" stop-color="#FE8900" stop-opacity="0.76"/>
+</linearGradient>
+<linearGradient id="paint1_linear_226_273" x1="57.2222" y1="26.7183" x2="57.2222" y2="58.2821" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FE8900"/>
+<stop offset="0.443988" stop-color="#FE8900" stop-opacity="0.38"/>
+<stop offset="1" stop-color="#FE8900" stop-opacity="0.72"/>
+<stop offset="1" stop-color="#FE8900" stop-opacity="0.06"/>
+</linearGradient>
+</defs>
+</svg>
