@@ -26,6 +26,7 @@ const Home = () => {
         <input
            type='email'
            placeholder='Email'
+           className='email-search'
         />
         <button className='button'>
             Join Now

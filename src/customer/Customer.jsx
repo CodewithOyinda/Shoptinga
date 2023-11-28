@@ -1,4 +1,4 @@
-import React from 'react';
+import {useState} from 'react';
 import '../customer/Customer.css';
 import imgOne from './img/Ellipse 12.svg';
 import imgTwo from './img/Ellipse 11.svg';
@@ -19,6 +19,16 @@ import twitter from './img/twitter.svg';
 import linkedin from './img/linkedin.svg';
 
 const Customer = () => {
+    const [selected, setSelected] = useState(null)
+
+     const toggle = (i) => {
+        if (selected === i) {
+            return setSelected(null)
+        } 
+
+        setSelected(i)
+     }
+
   return (
     <div className='client'>
        <div className='start'>
@@ -28,7 +38,7 @@ const Customer = () => {
         <div className='one'><p>1</p></div>
          <div>
             <h3>Create an account</h3>
-            <p>create a free shoptinga account if you're a new user or login if you're a registered user.</p>
+            <p>Create a free shoptinga account if you're a new user or login if you're a registered user.</p>
          </div>
        </div>
        <div className='account'>
@@ -98,41 +108,64 @@ const Customer = () => {
        </div>
        <div className='grouptwo'><img src={group} alt='group'/></div>
        <div className='faqs'>
-          <div className='faq-title'><p>FAQS</p></div>
+          <div className='faq-title'><p>FAQ'S</p></div>
           <div className='sub-title'><p>Frequently asked questions</p></div>
-          <div>
+          <div className='search-bar'>
+          <img src={search} alt='search'/>
             <input
              type='search'
              placeholder='Search'
+             className='faq-search'
             />
-            <img src={search} alt='search'/>
+            
           </div>
+           <div className='accordion'>
+                  {data.map((item, i) => (
+                     <div className='item'>
+                         <div className='title' onClick={() => toggle(i)}>
+                            <p>{item.question}</p>
+                            <span style={{fontWeight:'bolder', fontSize:'20px'}}>{selected === i ? 'x' : '+'}</span>
+                         </div>
+                         <div className={selected === i ? 'content show' : 'content'}>
+                            {item.answer}
+                         </div>
+                     </div>
+                  ))}
+           </div>
           <div className='faq-btn'>
             <button>See More FAQS</button>
           </div>
+
        </div>
        <div className='socials'>
-           <h1>Follow us</h1>
+      
            <div className='social-icon'>
+           <h1>Follow us</h1>
+           <div className='icons'>
              <img src={instagram} alt='instagram'/>
              <img src={whatsapp} alt='whatsapp'/>
              <img src={twitter} alt='twitter'/>
              <img src={linkedin} alt='linkedin'/>
+             </div>
            </div>
-           <h1>Company</h1>
+           
            <div>
+           <h1>Company</h1>
             <p>Home</p>
             <p>Shop</p>
             <p>Search</p>
             <p>Sign in</p>
            </div>
-           <h1>Resources</h1>
+           
            <div>
+           <h1>Resources</h1>
             <p>Become a seller</p>
             <p>Help and support</p>
            </div>
+           <div>
            <h1>Legal</h1>
            <p>Terms and Conditions</p>
+           </div>
        </div>
        <div className='copy-right'>
             <p>Copyright © 2023 Shoptinga inc. All rights reserved.</p>
@@ -142,3 +175,26 @@ const Customer = () => {
 }
 
 export default Customer
+
+const data = [
+    {
+        question: 'What is Shoptinga?',
+        answer: 'Shoptinga has been crafted as an operating system that seamlessly integrates with both digital and physical products, providing a platform that not only facilities transactions but also enhances the overall experience for both buyers and sellers. this innovative system is dedicated to creating a sense of ease and empowerment by streamlining the interaction between consumers and empowerment by streamlining between consumers and product in in the ever evolving marketplace.'
+    },
+    {
+        question: 'Can i sell physical products on shoptinga?',
+        answer: 'Yes, the shoptinga storefront empower you to effortlessly sell physical products, harnessing the capabilities pf the shoptinga platform.',
+    },
+    {
+        question: 'Is it only fiat i can pay with ?',
+        answer: 'Shoptinga offers a dual payment system, allowing you the flexibility to choose between traditional fiat currency or cryptocurrency for your transactions.',
+    },
+    {
+        question: 'What type of digital product can i sell ?',
+        answer: 'With shoptinga you can sell all kinds of digital products like ebooks, online courses, music, softwares, digital arts, mobile apps, games, movies and tv shows, virtual events and more .',
+    },
+    {
+        question: 'Are they any fees for using shoptinga?',
+        answer: 'Certainly, sellers can enjoy a complimentary 3 month free trial period with shoptinga. Following this trial, a monthly subscription of 2000 naira is applicable.',
+    },
+]
